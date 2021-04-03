@@ -15,6 +15,6 @@
     <i class="fas fa-book"></i>CRUD Mapel</a>
 </li>
 <li>
-    <a href="/Admin/a_tugas">
+    <a href="/Admin/a_kelas">
     <i class="fas fa-book"></i>CRUD Kelas</a>
 </li>
