@@ -18,3 +18,12 @@
     <a href="/Admin/a_kelas">
     <i class="fas fa-book"></i>CRUD Kelas</a>
 </li>
+{{-- coba tugas --}}
+<li>
+    <a href="/Guru/tugas">
+    <i class="fas fa-book"></i>Guru Buat Tugas</a>
+</li>
+<li>
+    <a href="/Siswa/tugas">
+    <i class="fas fa-book"></i>Lihat Tugas</a>
+</li>
