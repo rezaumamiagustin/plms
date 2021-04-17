@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', 'CRUD Siswa')
+@section('title', 'Pengumpulan')
     
 @section('content')
 
@@ -27,18 +27,11 @@
             <td>{{ $no++ }}</td>
             <td>{{ $tgs->nama_tugas }}</td>
             <td>{{ $tgs->end_date }}</td>
+
             <td>
-                 <a class="btn btn-info" href="/Siswa/tugas/{{ $tgs->id }}">Show</a>
-                {{-- <a class="btn btn-primary" href="/Admin/a_siswa/edit/{{ $sis->id }}">Edit</a>
-                <form action="/Admin/a_siswa/{{ $sis->id }}" method="post"
-                    class="d-inline">
-                        @method('delete')
-                        @csrf
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                </form>  --}}
+                <a class="btn btn-info" href="/Siswa/tugas/{{ $tgs->id }}">Lihat</a>
             </td>
         </tr>
         @endforeach
     </table>
-
 @endsection

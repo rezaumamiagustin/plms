@@ -11,7 +11,7 @@
             <a href="/Guru/tugas" class="btn btn-primary">Kembali</a>
             <br>
 
-            <form method="post" action="{{ route('storeSiswaTugas') }} ">
+            <form method="post" action="/tugas ">
 
                 @csrf
 
@@ -29,8 +29,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Pengumpulan</label>
-                    <input id="end_date" name="end_date" type="date" class="form-control @error('end_date') is-invalid @enderror "
+                    <label>Kelas</label>
+                    <input id="end_date" name="end_date" type ="date" class="form-control @error('end_date') is-invalid @enderror "
                         value="{{ old('end_date') }}">
 
                     @if($errors->has('end_date'))
@@ -41,7 +41,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Unggah</button>
                 {{-- <div class="form-group">
                     <input type="submit" class="btn btn-success" value="Simpan">
                 </div> --}}

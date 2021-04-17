@@ -36,8 +36,14 @@ Route::view('/Admin/a_kelas','Admin/a_kelas');
 //========Tugas Guru=========
 Route::get('/Guru/tugas', [TugasController::class, 'index']);
 Route::get('/Guru/tugas/create', [TugasController::class, 'create']);
-Route::post('/tugas', [TugasController::class, 'store'])->name('storeSiswaTugas');
+Route::post('/tugas', [TugasController::class, 'store']);
+Route::get('/Guru/tugas/edit/{tugas}', [TugasController::class, 'edit']);
+Route::patch('/Guru/tugas/{tugas}', [TugasController::class, 'update']);
+Route::delete('/Guru/tugas/{id}', [TugasController::class, 'destroy']);
+Route::get('/Guru/tugas/{id}', [TugasController::class, 'detail']);
 
 //========Tugas Siswa=========
 Route::get('/Siswa/tugas', [TugasController::class, 'indexs']);
+Route::get('/Siswa/lihat_tugas', [TugasController::class, 'indexkumpul']);
 Route::get('/Siswa/tugas/{id}', [TugasController::class, 'show']);
+Route::post('/lihat_tugas', [TugasController::class, 'uploadTugas'])->name('tugasLink');
